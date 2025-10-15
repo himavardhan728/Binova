@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binova Smart Recycling</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>♻️ Binova Smart Recycling</h1>
+    <p class="subtitle">Transforming waste into value</p>
+
+    <div class="card">
+      <label for="material">Choose your material:</label>
+      <select id="material">
+        <option value="">-- Select --</option>
+        <option value="plastic">Plastic</option>
+        <option value="paper">Paper</option>
+        <option value="metal">Metal</option>
+      </select>
+      <button onclick="evaluateWaste()">Deposit</button>
+    </div>
+
+    <div id="result" class="coupon hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
